@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+/* home page */
 #top-nav-bar{
     display: flex;
     justify-content: space-around;
@@ -34,11 +36,41 @@
     border-style: hidden;
     background-color: white;
 }
-main{       
+.home-page-main{       
     background-color: rgb(245, 245, 245);
     position: relative;
     top: 60px;
     height: 100%;
 }
+#top-nav-bar .login-account{
+    position: relative;   
+}
 
+#top-nav-bar .login-account a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(242, 242, 242);
+    padding: 10.2px;
+    border-radius: 8px; 
+}
+#top-nav-bar .login-account a:hover{
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+}
+
+
+
+/* login page */
+.login-page-cover{
+    position: relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgb(245, 245, 245);
+}
+.login-box{
+    max-width: 500px;
+    max-height: 1000px;
+}
 
