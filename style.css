@@ -38,9 +38,10 @@
 }
 .home-page-main{       
     background-color: rgb(245, 245, 245);
-    position: relative;
+    position: absolute;
     top: 60px;
-    height: 100%;
+    bottom:0px;
+    width: 100%;
 }
 #top-nav-bar .login-account{
     position: relative;   
