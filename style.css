@@ -108,3 +108,10 @@
     margin: 10px 0;
 }
 
+.login-page-cover .sign-up-text a{
+    color:rgb(39, 131, 207);
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
