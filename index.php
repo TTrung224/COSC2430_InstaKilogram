@@ -41,9 +41,9 @@
         main section
         <?php
         if($_SESSION["logedIn"] == true){
-                include_once("test.php");
+                include_once("userFeed.php");
             } else if($_SESSION["logedIn"] != true) {
-                include_once("test1.php");
+                include_once("guestFeed.php");
             }
         ?>
         <a href="logout.php">Logout</a>
