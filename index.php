@@ -1,3 +1,8 @@
+<?php
+    $_SESSION["logedIn"] = false;
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>InstaKilogram</title>
 </head>
+
 <body>
     <!--header-->
     <header id="top-nav-bar">
@@ -19,12 +25,28 @@
             </form>
         </div>
         <div class="header-login">
-            <div class="login-account"><a href="login_page.html">Account</a></div>
+        <?php
+            if($_SESSION["logedIn"] == true){
+                echo '<div class="login-account"><a href="login_page.php">Account</a></div>';
+                //include_once("nav_account.php");
+            } else if($_SESSION["logedIn"] != true) {
+                echo '<div class="login-account"><a href="login_page.php">Login</a></div>';
+            }
+        ?>
         </div>
     </header>
+
     <!--main-->
     <main class="home-page-main">
         main section
+        <?php
+        if($_SESSION["logedIn"] == true){
+                include_once("test.php");
+            } else if($_SESSION["logedIn"] != true) {
+                include_once("test1.php");
+            }
+        ?>
+        <a href="logout.php">Logout</a>
     </main>
 </body>
 </html>
