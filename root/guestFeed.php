@@ -7,10 +7,7 @@
 </head>
 <body>
     <div>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
+        <p>guest feed</p>
     </div>
 </body>
 </html>

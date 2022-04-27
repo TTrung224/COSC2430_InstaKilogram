@@ -1,5 +1,6 @@
 <?php
     $_SESSION["logedIn"] = false;
+
     session_start();
 ?>
 

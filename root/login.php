@@ -14,7 +14,7 @@ $email = formatInput($_POST['email']);
 $password = formatInput($_POST['password']);
 $validated = false;
 
-if (($file = fopen("data/account.db", "r")) !== FALSE) {
+if (($file = fopen("../data/account.db", "r")) !== FALSE) {
     while (($line = fgets($file)) !== false) {
         $data = explode(",", $line);  
         if($data[0] == $email && $data[1] == $password){

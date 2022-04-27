@@ -7,10 +7,7 @@
 </head>
 <body>
     <div>
-        <p>halo</p>
-        <p>halo</p>
-        <p>halo</p>
-        <p>halo</p>
+        <p>user feed</p>
     </div>
 </body>
 </html>
