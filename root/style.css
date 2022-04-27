@@ -112,7 +112,78 @@
 .login-page-cover .sign-up-text a{
     color:rgb(39, 131, 207);
     text-decoration: none;
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
 
+/* profile page */
+.profile-page-profile {
+    padding: 5rem;
+}
+
+.profile-page-pfp img {
+    border-radius: 50%;
+}
+
+.profile-page-pfp {
+    float: left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.profile-page-user-name {
+    display: inline-block;
+    font-weight: 100;
+}
+
+.profile-page-profile-edit-btn {
+    background-color: whitesmoke;
+    border-radius: 3px;
+    border-width: 1px;
+    display: inline-block;
+    font-weight: 100;
+    line-height: 1;
+    padding: 8px;
+    margin-left: 2rem;
+}
+
+.profile-page-stats li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.profile-page-stats {
+    margin-bottom: 1rem;
+}
+
+.profile-page-real-name {
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+}
+
+.gallery-item {
+    position:relative;
+    flex: 1 1 0;
+    margin: 1rem;
+    min-width: 25%;
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.visually-hidden {
+    display: none;
+}

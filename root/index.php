@@ -28,7 +28,7 @@
         <div class="header-login">
         <?php
             if($_SESSION["logedIn"] == true){
-                echo '<div class="login-account"><a href="login_page.php">Account</a></div>';
+                echo '<div class="login-account"><a href="profile_page.php">Account</a></div>';
                 //include_once("nav_account.php");
             } else if($_SESSION["logedIn"] != true) {
                 echo '<div class="login-account"><a href="login_page.php">Login</a></div>';
