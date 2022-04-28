@@ -139,3 +139,13 @@
      height: 50px;
      
  }
+
+ footer .other{
+     display: flex;
+     justify-content: space-around;
+     width: 200px;
+ }
+  footer .other a{
+      text-decoration: none;
+      color:black;
+  }
