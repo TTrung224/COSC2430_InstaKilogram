@@ -15,7 +15,7 @@
     <main class="login-page-cover">
         <div class="login-box">
             <div class="login-box-logo"><img src="Assets\InstaKilogram_logo.jpeg" alt="login box logo"></div>
-            <form class="login-form" action="login.php" method="post">
+            <form class="login-form" action="functions\login.php" method="post">
                 <input class="login-page-input" name="email" type="email" placeholder="Email">
                 <input class="login-page-input" name="password" type="password" placeholder="Password">
                 <button class="login-page-submit-btn" type="submit">Login</button>
