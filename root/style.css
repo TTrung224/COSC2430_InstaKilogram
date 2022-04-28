@@ -113,6 +113,10 @@
     color:rgb(39, 131, 207);
     text-decoration: none;
     font-weight: 700;
-    
 }
 
+.login-page-cover .error{
+    color: rgba(var(--i30,237,73,86),1);
+    background-color: white;
+    border: none;
+}

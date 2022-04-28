@@ -11,24 +11,29 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 }
 
 $email = formatInput($_POST['email']);
+$email = strtolower($email);
 $password = formatInput($_POST['password']);
 $validated = false;
 
-if (($file = fopen("../../data/account.db", "r")) !== FALSE) {
-    while (($line = fgets($file)) !== false) {
-        $data = explode(",", $line);  
-        if($data[0] == $email && $data[1] == $password){
-            $validated = true;
-            break;
+if ($email != "" && $password != ""){
+    if (($file = fopen("../../data/account.db", "r")) !== FALSE) {
+        while (($line = fgets($file)) !== false) {
+            $data = explode(",", $line);  
+            if($data[0] == $email && $data[1] == $password){
+                $validated = true;
+                break;
+            }
         }
+    
+        fclose($file);
     }
-  
-    fclose($file);
-  }
 
-if($validated == false){
-    echo "not validated email or password";
-} else {
-    $_SESSION["logedIn"] = true;
-    header("Location: ../index.php");
+    if($validated == false){
+        header("Location: ../login_page.php?error=not validated email or password");
+    } else {
+        $_SESSION["logedIn"] = true;
+        header("Location: ../index.php");
+    }
+} else{
+    header("Location: ../login_page.php");
 }

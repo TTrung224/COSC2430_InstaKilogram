@@ -1,6 +1,6 @@
 <?php
 if(isset($_SESSION["logedIn"])){
-    require_once("userFeed.php");
+    require_once("user_feed.php");
 } else {
-    require_once("guestFeed.php");
+    require_once("guest_feed.php");
 }

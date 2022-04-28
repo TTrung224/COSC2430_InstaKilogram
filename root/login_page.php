@@ -14,14 +14,18 @@
 <body>
     <main class="login-page-cover">
         <div class="login-box">
-            <div class="login-box-logo"><img src="Assets\InstaKilogram_logo.jpeg" alt="login box logo"></div>
+            <a href="index.php"><div class="login-box-logo"><img src="Assets\InstaKilogram_logo.jpeg" alt="login box logo"></div></a>
             <form class="login-form" action="functions\login.php" method="post">
-                <input class="login-page-input" name="email" type="email" placeholder="Email">
-                <input class="login-page-input" name="password" type="password" placeholder="Password">
+                <?php if(isset($_GET['error'])) { ?>
+                    <p class="login-page-input error"> <?php echo $_GET['error'] ?> </p>
+                <?php } ?>
+                <input class="login-page-input email" name="email" type="email" placeholder="Email">
+                <input class="login-page-input pwd" name="password" type="password" placeholder="Password">
                 <button class="login-page-submit-btn" type="submit">Login</button>
             </form>
             <p class="sign-up-text">Don't have account?<a href=""> Sign up</a></p>
         </div>
     </main>
+    <script src = "login_page_script.js"></script>
 </body>
 </html>
