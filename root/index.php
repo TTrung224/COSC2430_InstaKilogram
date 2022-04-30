@@ -50,7 +50,6 @@
             <a href="">Privacy</a>
             <a href="">Help</a>
         </div>
-        
     </footer>
 </body>
 </html>

@@ -35,6 +35,7 @@
     padding: 11px;
     border-style: hidden;
     background-color: white;
+    cursor: pointer;
 }
 
 /* homepage */
@@ -165,6 +166,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 5rem;
+    vertical-align: middle;
 }
 
 .profile-page-user-name {
@@ -217,8 +219,29 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .visually-hidden {
     display: none;
 }
+
+.profile-page-edit-profile{
+    display: inline-block;
+    position: relative;   
+    vertical-align:super;
+}
+
+.profile-page-edit-profile a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(242, 242, 242);
+    padding: 8px;
+    border-radius: 8px; 
+}
+.profile-page-edit-profile a:hover{
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+}
+
+/* edit profile page */

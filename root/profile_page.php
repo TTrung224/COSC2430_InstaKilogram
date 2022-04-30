@@ -9,19 +9,20 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style.css">
-      <title>Login</title>
+      <title>Profile</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="profile-page-profile">
-          <div class="profile-page-pfp">
-            <img src="https://images.unsplash.com/photo-1617633840837-b9164835073f?w=152&h=152&fit=crop&crop=faces" alt="">
-          </div>
+      <!--header-->
+      <?php require_once('templates/header.php'); ?>
+      <div class="profile-page-profile">
+        <div class="profile-page-pfp">
+          <img src="https://images.unsplash.com/photo-1617633840837-b9164835073f?w=152&h=152&fit=crop&crop=faces" alt="">
+        </div>
+        <div class="profile-page-user-info">
           <div class="profile-page-user-settings">
             <h1 class="profile-page-user-name">kevin_</h1>
-            <button class="btn profile-page-profile-edit-btn">Edit Profile</button>
-            <button class="btn profile-page-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+            <div class="profile-page-edit-profile"><a href="edit_profile_page.php">Edit profile</a></div>
           </div>
           <div class="profile-page-stats">
             <ul>
@@ -35,9 +36,8 @@
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
           </div>
         </div>
-        <!-- End of profile section -->
       </div>
-      <!-- End of container -->
+      <!-- End of profile section -->
     </header>
     <main>
       <div class="container">

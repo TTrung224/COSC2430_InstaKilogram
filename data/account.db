@@ -1,4 +1,4 @@
-email,password
-a@gmail.com,123
-b@gmail.com,345
-c@gmail.com,678
+email,password,username,realname,pfp_path
+a@gmail.com,123,kevin_,Kevin,Assets/pfp/default_user.png
+b@gmail.com,456,user_b,UserB,Assets/pfp/default_user.png
+c@gmail.com,789,user_c,UserC,Assets/pfp/default_user.png
