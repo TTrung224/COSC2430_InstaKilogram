@@ -12,32 +12,29 @@
       <title>Edit profile</title>
   </head>
   <body>
-  <header>
+    <header>
       <!--header-->
       <?php require_once('templates/header.php'); ?>
-      <div class="profile-page-profile">
-        <div class="profile-page-pfp">
-          <img src="https://images.unsplash.com/photo-1617633840837-b9164835073f?w=152&h=152&fit=crop&crop=faces" alt="">
-        </div>
-        <div class="profile-page-user-settings">
-          <h1 class="profile-page-user-name">kevin_</h1>
-          <div class="profile-page-edit-profile"><a href="edit_profile_page.php">Edit profile</a></div>
-        </div>
-        <div class="profile-page-stats">
-          <ul>
-            <li><span class="profile-page-stat-count">4</span> posts</li>
-            <li><span class="profile-page-stat-count">204</span> followers</li>
-            <li><span class="profile-page-stat-count">158</span> following</li>
-          </ul>
-        </div>
-        <div class="profile-page-bio">
-          <p class="profile-page-real-name">Kevin</p>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </div>
-      </div>
-      <!-- End of profile section -->
     </header>
     <main>
+      <div class="edit-profile-box">
+        
+        <form class="edit-profile-form" action="functions\edit-profile.php" method="post">
+          <div class="edit-profile-page-pfp">
+            <img src="<?=$_SESSION["userInfo"]["pfp_path"];?>" alt="">
+            <button class="edit-profile-page-btn" type="button">Edit profile picture</button>
+          </div>
+          <label for="username">Username : </label>
+          <input class="edit-profile-page-input" name="username" type="text" placeholder="Usename" value="<?=$_SESSION["userInfo"]["username"];?>">
+          <label for="realname">Real Name : </label>
+          <input class="edit-profile-page-input" name="realname" type="text" placeholder="Real Name" value="<?=$_SESSION["userInfo"]["realname"];?>">
+          <label for="bio">Bio : </label>
+          <input class="edit-profile-page-input" name="bio" type="text" placeholder="Bio">
+          <div class="edit-profile-submit">
+            <button class="edit-profile-page-btn" type="submit">Save changes</button>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>

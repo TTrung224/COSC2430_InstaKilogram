@@ -246,3 +246,56 @@
 }
 
 /* edit profile page */
+
+.edit-profile-box {
+    margin: 0px 80px;
+    width: 500px;
+    height: auto;
+    background-color: white;
+    text-align: left;
+    margin: auto;
+    padding: 5rem;
+}
+
+.edit-profile-page-input {
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    border-width: 0.2px;
+    border-color: rgb(161, 161, 161);
+    border-style: solid;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.edit-profile-page-btn {
+    display: inline-block;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    cursor:pointer;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.edit-profile-page-btn:hover {
+    background: #d1d1d1;
+}
+
+.edit-profile-page-pfp {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.edit-profile-page-pfp img{
+    border-radius: 50%;
+    width: 50%;
+}
+
+.edit-profile-submit {
+    text-align: center;
+    padding: 1rem;
+}
