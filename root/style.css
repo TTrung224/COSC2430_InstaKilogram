@@ -312,3 +312,50 @@
     text-align: center;
     padding: 1rem;
 }
+
+/* user-feed */
+.upload-img-section{
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    border-style: solid;
+    padding:10px;
+    border-width: 0.5px;
+    background-color: white;
+    border-color: rgb(193, 193, 193);
+    
+}
+.upload-img-section .img-sharing-levels{
+    display:flex;
+    justify-content: space-between;
+    
+
+}
+.upload-img-section #img-desciption{
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+.user-main-feed{
+    display:flex;
+    justify-content: center;
+
+}
+.upload-img-section .img-sharing-btns{
+   display:flex;
+   justify-content:end;
+   
+
+}
+.upload-img-section .img-sharing-btns button{
+    width: 100px;
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 8px;
+    margin: 10px 0px 10px 10px;
+    border-style: hidden;
+}
+.upload-img-section .img-sharing-btns button:hover{
+    background-color: rgb(212, 212, 212);
+}

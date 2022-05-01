@@ -12,30 +12,10 @@
         main section
         <?php require_once('templates/feed.php'); ?>
         <a href="functions/logout.php">Logout</a>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p> uh </p>
-        <p>  </p>
-        <p>  </p>
-        <p>  </p>
-        <p>  </p>
-        <p> </p>
-        <p>  </p>
-        <p> </p>
-        <p> </p>
-        <p>  </p>
+        
+        
+        
+        
 
     </main>
 
