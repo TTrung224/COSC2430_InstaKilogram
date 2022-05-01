@@ -15,11 +15,12 @@
                 <input class="search-bar" type="text" placeholder="Search">
                 <button class="search-icon" type="submit"><i class="fa fa-search"></i></button>
             </form>
+            
         </div>
         <div class="header-login">
         <?php
             if(isset($_SESSION["logedIn"])){
-                echo '<div class="login-account"><a href="profile_page.php">Account</a></div>';
+                echo '<div class="avatar"><a href="profile_page.php"><img src="Assets/pfp/default_user.png" alt="avatar"></a></div>';
             } else {
                 echo '<div class="login-account"><a href="login_page.php">Login</a></div>';
             }

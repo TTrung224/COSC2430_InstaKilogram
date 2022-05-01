@@ -37,6 +37,7 @@
           </div>
         </div>
       </div>
+      
       <!-- End of profile section -->
     </header>
     <main>
