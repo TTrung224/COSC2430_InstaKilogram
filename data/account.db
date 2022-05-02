@@ -1,4 +1,4 @@
 email|password|username|realname|pfp_path|date_created
-a@gmail.com	123	kevin_|Kevin|Assets/pfp/default_user.png|2022-05-02 12:15:00
-b@gmail.com	456	user_b|UserB|Assets/pfp/default_user.png|2022-05-02 12:16:25
-c@gmail.com	789	user_c|UserC|Assets/pfp/default_user.png|2022-05-02 12:18:37
+a@gmail.com|123|kevin_|Kevin|Assets/pfp/default_user.png|2022-05-02 12:15:00
+b@gmail.com|456|user_b|UserB|Assets/pfp/default_user.png|2022-05-02 12:16:25
+c@gmail.com|789|user_c|UserC|Assets/pfp/default_user.png|2022-05-02 12:18:37
