@@ -37,4 +37,4 @@ $db_file = fopen("../../data/post.db", "a");
 $text = $_SESSION["userInfo"]["email"] . "|" . date("Y-m-d H:i:s") . "|" . $description . "|" . $file_name . "|" . $sharing_level . "\n";
 fwrite($db_file, $text);
 fclose($db_file);
-header("Location: index.php");
+header("Location: ../index.php");
