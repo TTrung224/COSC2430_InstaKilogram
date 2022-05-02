@@ -71,7 +71,7 @@
 .home-page-main{       
     background-color: rgb(245, 245, 245);
     position: relative;
-    top: 24px;
+    top: 60px;
     width: 100%;
 }
 
@@ -328,11 +328,11 @@
 .upload-img-section .img-sharing-levels{
     display:flex;
     justify-content: space-between;
-    
+    margin-bottom: 10px;
 
 }
 .upload-img-section #img-description{
-    margin: 10px 0;
+    margin: 10px 0px 14px 0px;
     width: 100%;
     padding: 10px;
     border-radius: 8px;

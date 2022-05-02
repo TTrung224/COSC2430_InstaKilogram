@@ -26,7 +26,7 @@ $_FILES["image"]["name"] = (string)$line_index . '.' . $fileExtension;
 
 $file_name = basename($_FILES["image"]["name"]);
 
-$path = "../../data/images/";
+$path = "../Assets/post_images/";
 $file = $path . $file_name;
 move_uploaded_file($_FILES["image"]["tmp_name"], $file);
 
@@ -37,3 +37,4 @@ $db_file = fopen("../../data/post.db", "a");
 $text = $_SESSION["userInfo"]["email"] . "|" . date("Y-m-d H:i:s") . "|" . $description . "|" . $file_name . "|" . $sharing_level . "\n";
 fwrite($db_file, $text);
 fclose($db_file);
+header("Location: index.php");

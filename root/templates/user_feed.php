@@ -13,7 +13,7 @@
             <div class="img-sharing-levels">
                 <div>
                     <label for="image-input-file">Add an image:</label>
-                    <input name="image" type="file" id="image-input-file" accept = "image/apng, image/avif, image/gif, image/jpeg, image/png, image/svg+xml, image/webp">
+                    <input name="image" type="file" id="image-input-file" accept="image/apng, image/avif, image/gif, image/jpeg, image/png, image/svg+xml, image/webp" required>
                 </div>
                 <div>
                     <label for="sharing-option">Sharing level</label>
@@ -58,14 +58,12 @@
         ?>
         <div class="post">
             <header class="post-header">
-                <a href="">
-                    <img src="" alt="">
-                    <p></p>
-                </a>
+                <img src="Assets/pfp/default_user.png" alt="post-user avatar">
+                <p>post-user name</p>
             </header>
-            <div class="post-image"><img src="" alt=""></div>
+            <div class="post-image"><img src="Assets/post_images/4.jpg" alt="post-image"></div>
             <div class="post-description">
-                <p></p>
+                <p>Post description here</p>
             </div>
         </div>
     </main>

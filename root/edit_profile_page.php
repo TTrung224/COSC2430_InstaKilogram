@@ -12,10 +12,10 @@
       <title>Edit profile</title>
   </head>
   <body>
-    <header>
-      <!--header-->
-      <?php require_once('templates/header.php'); ?>
-    </header>
+    
+    <!--header-->
+    <?php require_once('templates/header.php'); ?>
+
     <main>
       <div class="edit-profile-box">
         
