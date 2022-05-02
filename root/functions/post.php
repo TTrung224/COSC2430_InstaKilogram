@@ -33,7 +33,7 @@ move_uploaded_file($_FILES["image"]["tmp_name"], $file);
 // Add post information into post.db
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 
-$db_file = fopen("../../data/post.csv", "a");
-$text = $_SESSION["userInfo"]["email"] . "\t" . date("Y-m-d H:i:s") . "\t" . $description . "\t" . $file_name . "\t" . $sharing_level . "\n";
+$db_file = fopen("../../data/post.db", "a");
+$text = $_SESSION["userInfo"]["email"] . "|" . date("Y-m-d H:i:s") . "|" . $description . "|" . $file_name . "|" . $sharing_level . "\n";
 fwrite($db_file, $text);
 fclose($db_file);

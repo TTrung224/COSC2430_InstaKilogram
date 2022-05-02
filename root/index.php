@@ -10,7 +10,14 @@
     <!--main-->
     <main class="home-page-main">
         main section
-        <?php require_once('templates/feed.php'); ?>
+        <?php
+            if(isset($_SESSION["logedIn"])){
+                require_once("templates/user_feed.php");
+            } else {
+                require_once("templates/guest_feed.php");
+            } 
+        ?>
+        
         <a href="functions/logout.php">Logout</a>
         
         
@@ -20,16 +27,6 @@
     </main>
 
     <!--footer-->
-    <footer>
-        <div class="footer-logo"><a href="index.php"><img src="Assets\InstaKilogram_logo.jpeg" alt="footer-logo"></a></div>
-        <div class="footer-copyright">
-            <p class="footer-copyright">2022 © Copyright COSC2430_A2 Group 4. All rights reserved.</p>
-        </div>
-        <div class="other">
-            <a href="">About</a>
-            <a href="">Privacy</a>
-            <a href="">Help</a>
-        </div>
-    </footer>
+    <?php require_once('templates/footer.php'); ?>
 </body>
 </html>
