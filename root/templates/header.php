@@ -1,3 +1,4 @@
+<?php session_start()?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,9 +19,11 @@
             
         </div>
         <div class="header-login">
+        
         <?php
-            if(isset($_SESSION["logedIn"])){
-                echo '<div class="avatar"><a href="profile_page.php"><img src="Assets/pfp/default_user.png" alt="avatar"></a></div>';
+            if(isset($_SESSION["logedIn"])){ ?>
+                <div class="avatar"><a href="profile_page.php"><img src= "../<?=$_SESSION["userInfo"]["pfp_path"];?>" alt="avatar"></a></div>
+            <?php
             } else {
                 echo '<div class="login-account"><a href="login_page.php">Login</a></div>';
             }

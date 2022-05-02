@@ -7,28 +7,27 @@
 </head>
 <body>
     <div class="user-main-feed">
-        <form action="" class="upload-img-section">
-                <p>Let's share something!</p>
-                <textarea name="img-desciption" id="img-desciption" cols="30" rows="1" placeholder="Write a description"></textarea>
-                <div class="img-sharing-levels">
-                    <div>
-                        <label for="image-input-file">Add an image:</label>
-                        <input type="file" id="image-input-file">
-                    </div>
-                    <div>
-                        <label for="img-option">Sharing level</label>
-                        <select name="img-option" id="img-option">
-                            <option value="Public">Public</option>
-                            <option value="Internal">Internal</option>
-                            <option value="Private">Private</option>
-                        </select>
-                    </div>
+        <form action="functions/post.php" class="upload-img-section" method="post" enctype="multipart/form-data">
+            <p>Let's share something!</p>
+            <textarea name="img-description" id="img-description" cols="30" rows="1" placeholder="Write a description"></textarea>
+            <div class="img-sharing-levels">
+                <div>
+                    <label for="image-input-file">Add an image:</label>
+                    <input name="image" type="file" id="image-input-file" accept = "image/apng, image/avif, image/gif, image/jpeg, image/png, image/svg+xml, image/webp">
                 </div>
-                <div class="img-sharing-btns">
-                    <button type="reset" >Cancel</button>
-                    <button type="submit" >Upload</button>
+                <div>
+                    <label for="sharing-option">Sharing level</label>
+                    <select name="sharing-option" id="sharing-option">
+                        <option value="public">Public</option>
+                        <option value="internal">Internal</option>
+                        <option value="private">Private</option>
+                    </select>
                 </div>
-                
+            </div>
+            <div class="img-sharing-btns">
+                <button type="reset" >Cancel</button>
+                <button type="submit" name="post">Upload</button>
+            </div>        
         </form>
     </div>
 </body>

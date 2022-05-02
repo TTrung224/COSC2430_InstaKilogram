@@ -4,7 +4,7 @@
     box-sizing: border-box;
     
 }
-/* home page */
+/* header */
 #top-nav-bar{
     display: flex;
     justify-content: space-around;
@@ -39,13 +39,6 @@
     cursor: pointer;
 }
 
-.home-page-main{       
-    background-color: rgb(245, 245, 245);
-    position: relative;
-    top: 60px;
-    width: 100%;
-}
-
 #top-nav-bar .login-account{
     position: relative;   
 }
@@ -74,6 +67,13 @@
     color: white;
 }
 
+/* main page */
+.home-page-main{       
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    top: 24px;
+    width: 100%;
+}
 
 /* login page */
 .login-page-cover{
@@ -331,22 +331,25 @@
     
 
 }
-.upload-img-section #img-desciption{
+.upload-img-section #img-description{
     margin: 10px 0;
     width: 100%;
     padding: 10px;
     border-radius: 8px;
 }
+
+.upload-img-section #sharing-option{
+    padding: 3px;
+    border-radius: 8px;
+}
+
 .user-main-feed{
     display:flex;
     justify-content: center;
 
 }
 .upload-img-section .img-sharing-btns{
-   display:flex;
-   justify-content:end;
-   
-
+   align-self: flex-end;
 }
 .upload-img-section .img-sharing-btns button{
     width: 100px;
@@ -355,6 +358,7 @@
     border-radius: 8px;
     margin: 10px 0px 10px 10px;
     border-style: hidden;
+    background-color: rgb(239, 239, 239);
 }
 .upload-img-section .img-sharing-btns button:hover{
     background-color: rgb(212, 212, 212);
