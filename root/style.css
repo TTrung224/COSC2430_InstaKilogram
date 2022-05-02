@@ -315,51 +315,106 @@
 
 /* user-feed */
 .upload-img-section{
+    font-size: 18px;
     display: flex;
     flex-direction: column;
-    width: 540px;
+    width: 700px;
     border-style: solid;
-    padding:10px;
+    padding:20px;
     border-width: 0.5px;
     background-color: white;
     border-color: rgb(193, 193, 193);
-    
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-.upload-img-section .img-sharing-levels{
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
 
-}
 .upload-img-section #img-description{
     margin: 10px 0px 14px 0px;
     width: 100%;
     padding: 10px;
     border-radius: 8px;
+    font-size: large;
+}
+
+.upload-img-section .img-sharing-levels{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .upload-img-section #sharing-option{
     padding: 3px;
     border-radius: 8px;
+    font-size: 16px;
+}
+
+.upload-img-section .img-sharing-levels #image-input-file{
+    font-size: 16px;
 }
 
 .user-main-feed{
     display:flex;
     justify-content: center;
-
 }
+
 .upload-img-section .img-sharing-btns{
    align-self: flex-end;
 }
+
 .upload-img-section .img-sharing-btns button{
-    width: 100px;
+    width: 120px;
     margin-left: 10px;
-    padding: 3px;
+    padding: 10px;
     border-radius: 8px;
     margin: 10px 0px 10px 10px;
     border-style: hidden;
     background-color: rgb(239, 239, 239);
+    font-size: 16px;
 }
+
 .upload-img-section .img-sharing-btns button:hover{
     background-color: rgb(212, 212, 212);
+}
+
+/* post */
+.post {
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(193, 193, 193);
+    background-color: white;
+    margin:auto;
+    max-width: 701px;
+    margin-bottom: 20px;
+}
+
+.post .post-header {
+    font-size: 20px;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 70px auto auto auto auto auto;
+    line-height: 64px;
+    width: 100%;
+}
+
+.post .post-header img {
+    height: 40px;
+    border-radius: 90%;
+    margin: 12px 15px 0px 15px;
+}
+
+.post .post-header .post-date {
+    font-weight: 100;
+    font-size: 16px;
+    grid-column: 7 / 7;
+    text-align: end;
+    margin-right: 15px;
+}
+
+.post .post-image img {
+    width: 700px;
+}
+
+.post .post-description {
+    margin: 8px 12px 15px 12px;
+    font-size: 16px;
 }

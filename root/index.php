@@ -16,7 +16,6 @@
 
     <!--main-->
     <main class="home-page-main">
-        main section
         <?php
             if(isset($_SESSION["logedIn"])){
                 require_once("templates/user_feed.php");
@@ -27,10 +26,6 @@
         
         <a href="functions/logout.php">Logout</a>
         
-        
-        
-        
-
     </main>
 
     <!--footer-->

@@ -30,6 +30,7 @@
             </div>        
         </form>
     </div>
+
     <main class="post-section">
 
         <?php 
@@ -51,21 +52,10 @@
         fclose($file);
         
         $post_arr = array_reverse($post_arr);
-        foreach($post_arr as $post){
-            echo $post[0].$post[1].$post[4]. "<br>";
-        }
 
+        include_once('functions/post_generate.php');
         ?>
-        <div class="post">
-            <header class="post-header">
-                <img src="Assets/pfp/default_user.png" alt="post-user avatar">
-                <p>post-user name</p>
-            </header>
-            <div class="post-image"><img src="Assets/post_images/4.jpg" alt="post-image"></div>
-            <div class="post-description">
-                <p>Post description here</p>
-            </div>
-        </div>
+
     </main>
 </body>
 </html>

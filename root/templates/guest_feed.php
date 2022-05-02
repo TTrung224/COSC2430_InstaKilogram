@@ -25,9 +25,8 @@
         fclose($file);
 
         $post_arr = array_reverse($post_arr);
-        foreach($post_arr as $post){
-            echo $post[0].$post[1].$post[4]. "<br>";
-        }
+
+        include_once('functions/post_generate.php');
         ?>
     </main>
 </body>
