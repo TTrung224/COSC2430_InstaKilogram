@@ -26,6 +26,7 @@
           <div class="profile-page-user-settings">
             <h1 class="profile-page-user-name"><?=$_SESSION["userInfo"]["username"];?></h1>
             <div class="profile-page-edit-profile"><a href="edit_profile_page.php">Edit profile</a></div>
+            <a href="/functions/logout.php">Logout</a>
           </div>
           <div class="profile-page-stats">
             <ul>
@@ -36,7 +37,7 @@
           </div>
           <div class="profile-page-bio">
             <p class="profile-page-real-name"><?=$_SESSION["userInfo"]["realname"]; ?></p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p><?=$_SESSION["userInfo"]["bio"]; ?></p>
           </div>
         </div>
       </div>

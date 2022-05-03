@@ -19,7 +19,7 @@
     <main>
       <div class="edit-profile-box">
         
-        <form class="edit-profile-form" action="functions\edit-profile.php" method="post">
+        <form class="edit-profile-form" action="functions\edit_profile.php" method="post">
           <div class="edit-profile-page-pfp">
             <img src="<?=$_SESSION["userInfo"]["pfp_path"];?>" alt="">
             <button class="edit-profile-page-btn" type="button">Edit profile picture</button>
@@ -29,7 +29,7 @@
           <label for="realname">Real Name : </label>
           <input class="edit-profile-page-input" name="realname" type="text" placeholder="Real Name" value="<?=$_SESSION["userInfo"]["realname"];?>">
           <label for="bio">Bio : </label>
-          <input class="edit-profile-page-input" name="bio" type="text" placeholder="Bio">
+          <input class="edit-profile-page-input" name="bio" type="text" placeholder="Bio" value="<?=$_SESSION["userInfo"]["bio"];?>">
           <div class="edit-profile-submit">
             <button class="edit-profile-page-btn" type="submit">Save changes</button>
           </div>

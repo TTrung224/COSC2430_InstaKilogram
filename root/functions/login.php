@@ -37,9 +37,10 @@ if ($email != "" && $password != ""){
         header("Location: ../login_page.php?error=not validated email or password");
     } else {
         $_SESSION["logedIn"] = true;
-        $_SESSION["userInfo"] = ["email" => $data[0], "username" => $data[2], "realname" => $data[3], "pfp_path" => $data[4]];
+        $_SESSION["userInfo"] = ["email" => $data[0], "username" => $data[2], "realname" => $data[3], "pfp_path" => $data[4], "bio" => $data[5]];
         header("Location: ../index.php");
     }
 } else{
     header("Location: ../login_page.php");
 }
+?>
