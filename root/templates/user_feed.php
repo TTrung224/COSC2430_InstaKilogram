@@ -28,11 +28,10 @@
                 <button type="reset" >Cancel</button>
                 <button type="submit" name="post">Upload</button>
             </div>        
-        </form>
+        </form>        
     </div>
 
     <main class="post-section">
-
         <?php 
         $file = fopen("../data/post.db", "r");
         $flag = 0;
@@ -46,13 +45,11 @@
             if($data[0] != $_SESSION["userInfo"]["email"] && strcmp(trim($data[4]),'private') == 0){
                 continue;
             }
-
             array_push($post_arr, $data);
         }
         fclose($file);
         
         $post_arr = array_reverse($post_arr);
-
         include_once('functions/post_generate.php');
         ?>
 

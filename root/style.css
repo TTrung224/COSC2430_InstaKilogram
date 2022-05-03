@@ -97,6 +97,7 @@
 }
 .login-page-cover .login-box-logo img{
     width: 250px;
+    padding: 10px 0px;
 }
 .login-page-cover .login-page-input{
     width: 100%;
@@ -324,8 +325,7 @@
     border-width: 0.5px;
     background-color: white;
     border-color: rgb(193, 193, 193);
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .upload-img-section #img-description{
@@ -377,6 +377,11 @@
 }
 
 /* post */
+.post-section {
+    display: flex;
+    flex-direction: column;
+}
+
 .post {
     border-style: solid;
     border-width: 0.5px;
@@ -384,7 +389,7 @@
     background-color: white;
     margin:auto;
     max-width: 701px;
-    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .post .post-header {

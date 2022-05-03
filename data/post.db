@@ -5,3 +5,5 @@ a@gmail.com|2022-05-02 12:28:03|another test post, hello|3.jpeg|public
 b@gmail.com|2022-05-02 16:16:13|this is the first post of b@gmail.com|4.jpg|public
 b@gmail.com|2022-05-02 16:18:37|first private post of b@gmail.com|5.jpg|private
 a@gmail.com|2022-05-02 17:12:26|a private post|6.jpg|private
+b@gmail.com|2022-05-02 23:41:44|a test internal post from user_b|7.jpg|internal
+a@gmail.com|2022-05-02 23:43:42||8.jpeg|public

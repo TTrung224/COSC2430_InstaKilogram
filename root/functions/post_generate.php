@@ -1,7 +1,7 @@
 <?php
 function get_post_user_info($email){
-    $dir = dirname($_SERVER['DOCUMENT_ROOT']);
-    $file = fopen("$dir/data/account.db", "r");
+    $out_root_dir = dirname($_SERVER['DOCUMENT_ROOT']);
+    $file = fopen("$out_root_dir/data/account.db", "r");
     $u_name;
     $pfp_path;
 
