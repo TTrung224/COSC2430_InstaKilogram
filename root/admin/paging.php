@@ -14,18 +14,27 @@ if(!isset($_GET['page'])){
 
 $page_start_index_row = ($current_page - 1) * $page_size;
 
+?> <tbody> <?php
 for($i = 0; $i < $number_of_row && $i <= ($page_start_index_row + $page_size - 1); $i++){
+    
     if($i >= $page_start_index_row){
-        echo "<p>";
+        ?> <tr> <?php
         for($j = 0; $j < $number_of_column; $j++){
-            echo $arr[$i][$j] . " | ";
+            ?> <td> <?php
+            echo $arr[$i][$j];
+            ?> </td> <?php
         }
-        echo "</p>";
+        ?> </tr> <?php
     }
 }
+?> </tbody> <?php
 
 $current_file_name = basename($_SERVER['PHP_SELF']);
 
+?> <div class="page-menu"> <?php
+
 for($page=1; $page <= $number_of_pages; $page++){ ?>
     <a href="<?=$current_file_name?>?page=<?=$page?>"> <?= $page ?> </a>
-<?php }
+<?php } ?>
+
+</div>

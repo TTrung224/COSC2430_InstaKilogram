@@ -15,9 +15,24 @@ document.querySelector(".login-page-cover .email").addEventListener("keyup",func
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
         document.querySelector(".login-page-cover .email").style.borderWidth = "2.5px";
         document.querySelector(".login-page-cover .email").style.borderColor = 'green';
+        document.querySelector(".login-page-cover .email").style.outlineColor = 'green';
+        document.querySelector(".login-box .login-page-submit-btn").disabled=false;
     } else {
+        var css = ".login-page-cover .login-page-submit-btn:hover{background-color: rgb(82, 158, 220);}";
+        var style = document.createElement('style');
+
+        if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
+
+        document.querySelector(".login-box .login-page-submit-btn").appendChild(style);
+        document.querySelector(".login-box .login-page-submit-btn").disabled=true;
+
         document.querySelector(".login-page-cover .email").style.borderWidth = "2.5px";
         document.querySelector(".login-page-cover .email").style.borderColor = 'red';
+        document.querySelector(".login-page-cover .email").style.outlineColor = 'red';
     }
 })
 

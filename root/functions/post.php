@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$description = htmlspecialchars($_POST['img-description']);
+$description = strip_tags($_POST['img-description']);
 $sharing_level = $_POST['sharing-option'];
 
 // Add image into images folder

@@ -115,11 +115,14 @@
     width: 100%;
     padding: 10px;
     background-color: rgb(82, 158, 220);
-    color: white;
+    color: rgb(255, 255, 255);
     border-style: hidden;
     border-radius: 8px;
 }
 
+.login-page-cover .login-page-submit-btn:hover{
+    background-color: rgb(44, 153, 241);
+}
 .login-page-cover .sign-up-text{
     margin: 10px 0;
 }
@@ -425,3 +428,53 @@ footer .other a{
     margin: 8px 12px 15px 12px;
     font-size: 16px;
 }
+
+/* admin */
+.admin-page-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-page-main .list-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+.admin-page-main .list-table th, td {
+    border-style: solid;
+    border-width: 0.5px;
+    padding: 4px 10px;
+    width: max-content;
+    text-align: left;
+}
+
+.page-number-form{
+    margin: 20px auto;
+
+}
+
+.admin-page-main .page-input{
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+}
+
+.page-number-form .number-of-pages{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-number-form #page{
+    border-radius: 8px;
+    outline-color: rgba(42, 120, 203, 0.911);
+    border-width: 1px;
+    border-color: rgba(124, 124, 124, 0.604);
+    border-style: solid;
+    padding: 2px 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: end;
+    width:60px;
+}
+
+
