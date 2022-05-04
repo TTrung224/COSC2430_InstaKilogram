@@ -11,7 +11,7 @@
         
         <?php
             if(isset($_SESSION["logedIn"])){ ?>
-                <div class="avatar"><a href="profile_page.php"><img src= "../<?=$_SESSION["userInfo"]["pfp_path"];?>" alt="avatar"></a></div>
+                <div class="avatar"><a href="profile_page.php"><img src= "../<?=$_SESSION["userInfo"]["pfp-path"];?>" alt="avatar"></a></div>
             <?php
             } else {
                 echo '<div class="login-account"><a href="login_page.php">Login</a></div>';

@@ -138,31 +138,31 @@
 
 
 /*footer*/
- footer{
-     background-color: white;
-     width:100%;
-     height: 100px;
-     margin-top: 60px;
-     display:flex;
-     justify-content:space-between;
-     align-items: center;
-     padding-right: 50px;
- }
+footer{
+    background-color: white;
+    width:100%;
+    height: 100px;
+    margin-top: 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 50px;
+}
 
- footer img{
-     height: 50px;
-     
- }
+footer img{
+    height: 50px;
+    
+}
 
- footer .other{
-     display: flex;
-     justify-content: space-around;
-     width: 200px;
- }
-  footer .other a{
-      text-decoration: none;
-      color:black;
-  }
+footer .other{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+footer .other a{
+    text-decoration: none;
+    color:black;
+}
 
   
 /* profile page */
@@ -173,6 +173,7 @@
 .profile-page-pfp img {
     border-radius: 50%;
     width: 10rem;
+    height: 10rem;
 }
 
 .profile-page-pfp {
@@ -303,6 +304,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-bottom: 1rem;
 }
 .edit-profile-page-pfp img{
     border-radius: 50%;

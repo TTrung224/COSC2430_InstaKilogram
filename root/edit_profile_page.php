@@ -19,11 +19,12 @@
     <main>
       <div class="edit-profile-box">
         
-        <form class="edit-profile-form" action="functions\edit_profile.php" method="post">
+        <form class="edit-profile-form" action="functions\edit_profile.php" method="post" enctype="multipart/form-data">
           <div class="edit-profile-page-pfp">
-            <img src="<?=$_SESSION["userInfo"]["pfp_path"];?>" alt="">
-            <button class="edit-profile-page-btn" type="button">Edit profile picture</button>
+            <img src="<?=$_SESSION["userInfo"]["pfp-path"];?>" alt="">
           </div>
+          <label for="pfp">Change profile picture : </label>
+          <input class="edit-profile-page-input" name="pfp-change" type="file" accept="image/apng, image/avif, image/gif, image/jpeg, image/png, image/svg+xml, image/webp">
           <label for="username">Username : </label>
           <input class="edit-profile-page-input" name="username" type="text" placeholder="Usename" value="<?=$_SESSION["userInfo"]["username"];?>">
           <label for="realname">Real Name : </label>
@@ -31,7 +32,7 @@
           <label for="bio">Bio : </label>
           <input class="edit-profile-page-input" name="bio" type="text" placeholder="Bio" value="<?=$_SESSION["userInfo"]["bio"];?>">
           <div class="edit-profile-submit">
-            <button class="edit-profile-page-btn" type="submit">Save changes</button>
+            <button class="edit-profile-page-btn" name="save-btn" type="submit">Save changes</button>
           </div>
         </form>
       </div>

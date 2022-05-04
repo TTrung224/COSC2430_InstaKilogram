@@ -20,7 +20,7 @@
       <?php require_once('templates/header.php'); ?>
       <div class="profile-page-profile">
         <div class="profile-page-pfp">
-          <img src="<?=$_SESSION["userInfo"]["pfp_path"];?>" alt="">
+          <img src="<?=$_SESSION["userInfo"]["pfp-path"];?>" alt="">
         </div>
         <div class="profile-page-user-info">
           <div class="profile-page-user-settings">

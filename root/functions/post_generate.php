@@ -18,14 +18,14 @@ function get_post_user_info($email){
             }
         }
         fclose($file);
-        return array('u_name' => $u_name, 'pfp_path' => $pfp_path);
+        return array('u_name' => $u_name, 'pfp-path' => $pfp_path);
 }
 
 foreach($post_arr as $post){ 
     $info = get_post_user_info($post[0]);?>
     <div class="post">
         <header class="post-header">
-            <img src="<?=$info['pfp_path']?>" alt="post-user avatar">
+            <img src="<?=$info['pfp-path']?>" alt="post-user avatar">
             <p><?=$info['u_name']?></p>
             <p class="post-date"><?=$post[1]?></p>
         </header>
