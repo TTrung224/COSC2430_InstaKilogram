@@ -50,6 +50,6 @@
             </form>
         </div>
     </main>
-    <script src = "login_page_script.js"></script>
+    <script src = "../login_page_script.js"></script>
 </body>
 </html>

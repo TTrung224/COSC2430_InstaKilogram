@@ -42,14 +42,36 @@
             fclose($file);
             
             $arr = array_reverse($arr);
-            
-            require_once('paging.php')
-
             ?>
+
+            <table class="list-table">
+                <caption>Accounts</caption>
+                <theader>
+                    <tr>
+                        <th> Email </th>
+                        <th> UserName </th>
+                        <th> DateCreated </th>
+                    </tr>
+                </theader>
+
+            <!-- table body -->
+            <?php require_once('paging.php') ?>
+
+            </table>
+
+            <form class="page-number-form" action="<?=$current_file_name?>" method="get">
+                <div class="page-input">
+                    <input type="text" name="page" id="page" value="<?=$current_page?>">
+                    <p> / </p>
+                    <p class="number-of-pages"><?=$number_of_pages?></p>
+                </div>
+                <button type="submit">search</button>
+            </form>
         </main>
 
         <!-- footer -->
         <?php require_once('admin_footer.html') ?>
 
+        <script src = "page_enter.js"></script>
     </body>
 </html>

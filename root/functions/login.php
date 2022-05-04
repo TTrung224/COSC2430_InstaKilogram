@@ -5,7 +5,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     function formatInput($data){
         $data = trim($data);
         $data = stripcslashes($data);
-        $data = htmlspecialchars($data);
+        $data = strip_tags($data);
         return $data;
     }
 }
