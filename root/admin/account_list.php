@@ -25,7 +25,7 @@
             <?php
             $out_root_dir = dirname($_SERVER['DOCUMENT_ROOT']);
 
-            $file = fopen("$out_root_dir/data/test.db", "r");
+            $file = fopen("$out_root_dir/data/account.db", "r");
             $flag = 0;
             $arr = array();
     
@@ -34,9 +34,11 @@
                 if($flag == 1){continue;}
     
                 $data = explode("|", $line);
-                $href = '"' . '"';
+                $href = "user_account.php?email=$data[0]";
                 $data[0] = "<a href=$href>$data[0]</a>";
-                
+                array_splice($data,1,1);
+                array_splice($data,3,2);
+
                 array_push($arr, $data);
             }
             fclose($file);
@@ -50,22 +52,21 @@
                     <tr>
                         <th> Email </th>
                         <th> UserName </th>
-                        <th> DateCreated </th>
+                        <th> Real Name </th>
+                        <th> Date Created </th>
                     </tr>
                 </theader>
 
             <!-- table body -->
-            <?php require_once('paging.php') ?>
+            <?php 
+            require_once('paging.php');
+            display_table_body($arr);
+            ?>
 
             </table>
 
             <form class="page-number-form" action="<?=$current_file_name?>" method="get">
-                <div class="page-input">
-                    <input type="text" name="page" id="page" value="<?=$current_page?>">
-                    <p> / </p>
-                    <p class="number-of-pages"><?=$number_of_pages?></p>
-                </div>
-                <button type="submit">search</button>
+                <?php display_page_selection() ?>
             </form>
         </main>
 

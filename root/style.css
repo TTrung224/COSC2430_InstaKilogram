@@ -258,11 +258,37 @@ footer .other a{
     padding: 8px;
     border-radius: 8px; 
 }
+
 .profile-page-edit-profile a:hover{
     background-color: rgba(0, 0, 0, 0.678);
     color: white;
 }
 
+.profile-page-user-settings form{
+    display: inline;
+}
+
+.profile-page-user-settings .success-message{
+    font-size: 16px;
+    margin-left: 10px;
+    width:fit-content;
+    display: inline-block;
+    color: green;
+}
+
+.profile-page-user-settings button{
+    padding: 8px;
+    border-radius: 8px;
+    border-style: solid;
+    margin: 8px 0px 14px 14px;
+    line-height: 100%;
+    font-size: 16px;
+}
+
+.profile-page-user-settings button:hover{
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+}
 /* edit profile page */
 
 .edit-profile-box {
@@ -408,6 +434,7 @@ footer .other a{
 
 .post .post-header img {
     height: 40px;
+    width: 40px;
     border-radius: 90%;
     margin: 12px 15px 0px 15px;
 }
@@ -441,12 +468,21 @@ footer .other a{
     margin: auto;
 }
 
+.admin-page-main .list-table caption{
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+}
+
 .admin-page-main .list-table th, td {
     border-style: solid;
     border-width: 0.5px;
-    padding: 4px 10px;
+    padding: 6px 10px;
     width: max-content;
     text-align: left;
+}
+
+.admin-page-main .list-table .post_img{
+    width: 400px;
 }
 
 .page-number-form{
@@ -476,5 +512,7 @@ footer .other a{
     text-align: end;
     width:60px;
 }
+
+
 
 

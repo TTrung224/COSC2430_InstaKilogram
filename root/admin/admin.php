@@ -21,11 +21,11 @@
         <?php require_once('admin_header.html') ?>
 
         <main class="home-page-main admin-page-main">
-            <div><a href="account_list.php?data=accounts">
+            <div><a href="account_list.php">
                 <p>account list</p>
                 <!-- icon -->
             </a></div>
-            <div><a href="paging_list.php?data=accounts">
+            <div><a href="image_list.php">
                 <p>image list</p>
                 <!-- icon -->
             </a></div>
