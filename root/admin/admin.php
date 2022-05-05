@@ -2,7 +2,16 @@
     session_start(); 
     if(!isset($_SESSION["logedIn"])){
         header("Location: login.php");
-      }
+    }
+
+    if(isset($_GET['logout'])){
+        session_start();
+
+        session_unset();
+        session_destroy();
+
+        header("location: admin.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +38,8 @@
                 <p>image list</p>
                 <!-- icon -->
             </a></div>
+
+            <a href="admin.php?logout=1">logout</a>
 
         </main>
 

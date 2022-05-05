@@ -10,21 +10,21 @@ if(isset($_POST['img-description']) && isset($_POST['sharing-option']) && isset(
     $temp = explode('.',$_FILES["image"]["name"]);
     $fileExtension = strtolower(end($temp));
 
-    // Get the line number of the post.csv to rename the new image
+    // Get the last image name of the post.db to rename the new image
     $file = fopen("../../data/post.db", "r");
     $flag = 0;
-    $line_index = 0;
     while (($line = fgets($file)) !== false) {
         $flag++;
         if($flag == 1){continue;}
-        $line_index++;
+        $data = explode("|", $line);
+        $index = (int) current(explode('.',$data[3]));
     }
     fclose($file);
 
-    $line_index++;
+    $index++;
 
     // Save file to the server
-    $_FILES["image"]["name"] = (string)$line_index . '.' . $fileExtension;
+    $_FILES["image"]["name"] = (string)$index . '.' . $fileExtension;
 
     $file_name = basename($_FILES["image"]["name"]);
 
