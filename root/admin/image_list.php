@@ -3,6 +3,15 @@
     if(!isset($_SESSION["logedIn"])){
         header("Location: login.php");
       }
+
+    $sort_methods = ['sort_email', 'sort_date'];
+    function sort_email($a1, $a2) {
+        return strcmp($a1[0], $a2[0]);
+    }
+    
+    function sort_date($a1, $a2) {
+        return strtotime($a2[1]) - strtotime($a1[1]);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -43,26 +52,25 @@
             }
             fclose($file);
             
-            $arr = array_reverse($arr);
+            $selected_sort = 'sort_date';
+            if(isset($_GET['sort']) && !empty($_GET['sort'])) {
+                if (in_array($_GET['sort'], $sort_methods)) {
+                    $selected_sort = $_GET['sort'];
+                }    
+            }
+            usort($arr, $selected_sort);
             ?>
 
             <table class="list-table">
                 <caption>Posts Images</caption>
-                <theader>
-                    <tr>
-                        <th> User Email </th>
-                        <th> Date Created</th>
-                        <th> Image </th>
-                        <th> Sharing Level </th>
-                        <th> Option </th>  
-                    </tr>
-                </theader>
+                
+            
+            <!-- table header -->
+            <?php require_once('paging.php');
+            display_table_images_header(); ?>
 
             <!-- table body -->
-            <?php 
-            require_once('paging.php');
-            display_table_body($arr);
-            ?>
+            <?php display_table_body($arr); ?>
 
             </table>
 

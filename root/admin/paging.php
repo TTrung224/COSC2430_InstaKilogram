@@ -35,15 +35,78 @@ function display_table_body($arr){
     ?> </tbody> <?php
 }
 
+function display_table_accounts_header(){ ?>
+    <theader>
+        <tr>
+            <?php if(isset($_GET['page'])){$page = $_GET['page'];}
+                  if(isset($_GET['search'])){$search = $_GET['search'];} ?>
+            <th><div>
+                <p>Email</p>
+                <form action="account_list.php" method="get">
+                    <?php if(isset($_GET['search']) && $_GET['search']!=""){echo "<input type='text' name='search' value='$search' class='none_display'>";}
+                    if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
+                    <button type="submit" value="sort_email" name="sort"><i class="fa fa-search"></i></button> </form>
+            </div></th>
+            <th><div>
+                <p>User Name</p>
+                <form action="account_list.php" method="get">
+                    <?php if(isset($_GET['search']) && $_GET['search']!=""){echo "<input type='text' name='search' value='$search' class='none_display'>";}
+                    if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
+                    <button type="submit" value="sort_uname" name="sort"><i class="fa fa-search"></i></button> </form>
+            </div></th>
+            <th><div>
+                <p>Real Name</p>
+                <form action="account_list.php" method="get">
+                    <?php if(isset($_GET['search']) && $_GET['search']!=""){echo "<input type='text' name='search' value='$search' class='none_display'>";}
+                    if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
+                    <button type="submit" value="sort_rname" name="sort"><i class="fa fa-search"></i></button> </form>
+            </div></th>
+            <th><div>
+                <p>Date Created</p>
+                <form action="account_list.php" method="get">
+                    <?php if(isset($_GET['search']) && $_GET['search']!=""){echo "<input type='text' name='search' value='$search' class='none_display'>";}
+                    if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
+                    <button type="submit" value="sort_date" name="sort"><i class="fa fa-search"></i></button> </form>
+            </div></th>
+        </tr>
+    </theader>
+<?php }
+
+function display_table_images_header(){ ?>
+    <theader>
+        <tr>
+            <?php if(isset($_GET['page'])){$page = $_GET['page'];}?>
+            <th><div>
+                <p>Email</p>
+                <form action="image_list.php" method="get">
+                    <?php if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
+                    <button type="submit" value="sort_email" name="sort"><i class="fa fa-search"></i></button> </form>
+            </div></th>
+            <th><div>
+                <p>Date Created</p>
+                <form action="image_list.php" method="get">
+                    <?php if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
+                    <button type="submit" value="sort_date" name="sort"><i class="fa fa-search"></i></button> </form>
+            </div></th>
+            <th> Image </th>
+            <th> Sharing Level </th>
+            <th> Option </th>  
+        </tr>
+    </theader>
+<?php }
+
 function display_page_selection(){ ?>
 
     <div class="page-input">
         <input type="text" name="page" id="page" value="<?=$GLOBALS['current_page']?>">
         <p> / </p>
         <p class="number-of-pages"><?=$GLOBALS['number_of_pages']?></p>
-        <?php if(isset($_GET['search']) && $_GET['search']!=""){?> 
-            <input type="text" name="search" value="<?=$_GET['search']?>" class="search"> 
-        <?php } ?>
+        <?php 
+        if(isset($_GET['search']) && $_GET['search']!=""){?> 
+            <input type="text" name="search" value="<?=$_GET['search']?>" class="none_display"> <?php } 
+        if(isset($_GET['sort']) && $_GET['sort']!=""){?>
+            <input type="text" name="sort" value="<?=$_GET['sort']?>" class="none_display"> <?php } 
+        ?>
     </div>
     <button type="submit">search</button>
 

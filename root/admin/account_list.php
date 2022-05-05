@@ -1,7 +1,25 @@
 <?php 
     session_start(); 
+
     if(!isset($_SESSION["logedIn"])){
         header("Location: login.php");
+    }
+
+    $sort_methods = ['sort_uname', 'sort_rname', 'sort_email', 'sort_date'];
+    function sort_uname($a1, $a2) {
+        return strcmp($a1[1], $a2[1]);
+    }
+
+    function sort_rname($a1, $a2) {
+        return strcmp($a1[2], $a2[2]);
+    }
+
+    function sort_email($a1, $a2) {
+        return strcmp($a1[0], $a2[0]);
+    }
+    
+    function sort_date($a1, $a2) {
+        return strtotime($a2[3]) - strtotime($a1[3]);
     }
 ?>
 
@@ -43,8 +61,6 @@
             }
             fclose($file);
             
-            $arr = array_reverse($arr);
-
             if(isset($_GET['search']) && $_GET['search']!=""){
                 $search_str = $_GET['search'];
                 $pattern = "/$search_str/i";
@@ -57,6 +73,14 @@
                 }
                 $arr = $search_arr;
             }
+            
+            $selected_sort = 'sort_date';
+            if(isset($_GET['sort']) && !empty($_GET['sort'])) {
+                if (in_array($_GET['sort'], $sort_methods)) {
+                    $selected_sort = $_GET['sort'];
+                }    
+            }
+            usort($arr, $selected_sort);
             ?>
 
             <table class="list-table">
@@ -67,25 +91,17 @@
                             <input type="text" name="search" id="search" placeholder="search for username or email"
                                 <?php if(isset($_GET['search'])){?> value="<?=$_GET['search']?>" <?php }?>
                             >
-                            <button type="submit">Search</button>
+                            <button class="search-icon" type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
                 </caption>
-                    
-                <theader>
-                    <tr>
-                        <th> Email </th>
-                        <th> UserName </th>
-                        <th> Real Name </th>
-                        <th> Date Created </th>
-                    </tr>
-                </theader>
+
+                <!-- table header -->
+                <?php require_once('paging.php');    
+                display_table_accounts_header(); ?>
 
                 <!-- table body -->
-                <?php 
-                require_once('paging.php');
-                display_table_body($arr);
-                ?>
+                <?php display_table_body($arr); ?>
 
             </table>
 

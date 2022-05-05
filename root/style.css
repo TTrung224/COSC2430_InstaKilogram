@@ -474,11 +474,18 @@ footer .other a{
     font-size: 30px;
 }
 
-.admin-page-main .list-table caption .search-form button{
+.admin-page-main .list-table caption .search-form .search-icon{
     font-size: 16px;
     padding: 5px;
     border-radius: 8px;
     border-style: solid;
+    background-color: rgb(228, 228, 228);
+    border-color: rgba(225, 225, 225, 0.6);
+}
+
+.admin-page-main .list-table caption .search-form .search-icon:hover{
+    background-color: rgb(200, 200, 200);
+    border-color: rgba(195, 195, 195, 0.6);
 }
 
 .admin-page-main .list-table caption .search-form input{
@@ -490,12 +497,20 @@ footer .other a{
     min-width: 230px;
 }
 
-.admin-page-main .list-table th, td {
+.admin-page-main .list-table th, td{
     border-style: solid;
     border-width: 0.5px;
     padding: 6px 10px;
     width: max-content;
     text-align: left;
+}
+
+.admin-page-main .list-table th div{
+    display:inline-flex;
+}
+
+.admin-page-main .list-table th input{
+    display: none;
 }
 
 .admin-page-main .list-table .post-img{
@@ -529,7 +544,7 @@ footer .other a{
     margin: auto;
 }
 
-.admin-page-main .page-input .search{
+.admin-page-main .page-input .none_display{
     display: none;
 }
 
