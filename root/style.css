@@ -498,8 +498,24 @@ footer .other a{
     text-align: left;
 }
 
-.admin-page-main .list-table .post_img{
+.admin-page-main .list-table .post-img{
     width: 400px;
+}
+
+.admin-page-main .list-table .delete-btn{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: rgba(193, 193, 193, 0.6);
+    background-color: rgb(192, 192, 192);
+}
+
+.admin-page-main .list-table .delete-btn:hover{
+    color: white;
+    background-color: rgb(72, 72, 72);
+    border-color: rgba(72, 72, 72, 0.6)
 }
 
 .page-number-form{

@@ -1,4 +1,9 @@
 <?php
+session_start(); 
+if(!isset($_SESSION["logedIn"])){
+    header("Location: login.php");
+}
+
 if(isset($_POST['pwd'])){
     $new_pwd = password_hash($_POST['pwd'],PASSWORD_DEFAULT);
     $email = $_GET['email'];

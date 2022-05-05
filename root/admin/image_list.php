@@ -34,7 +34,9 @@
                 if($flag == 1){continue;}
     
                 $data = explode("|", $line);
-                $data[3] = "<img class='post_img' src='../Assets/post_images/$data[3]'";
+                $href = "delete_post.php?img=$data[3]";
+                $data[] = "<a class='delete-btn' href=$href>Delete</a>";
+                $data[3] = "<img class='post-img' src='../Assets/post_images/$data[3]'";
                 array_splice($data,2,1);
 
                 array_push($arr, $data);
@@ -51,7 +53,8 @@
                         <th> User Email </th>
                         <th> Date Created</th>
                         <th> Image </th>
-                        <th> Sharing Level </th>                        
+                        <th> Sharing Level </th>
+                        <th> Option </th>  
                     </tr>
                 </theader>
 

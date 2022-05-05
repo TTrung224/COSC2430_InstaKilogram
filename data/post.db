@@ -1,5 +1,4 @@
 user_email|date_created|description|image_name|level
-a@gmail.com|2022-05-02 12:19:37|hello hola|1.png|public
 a@gmail.com|2022-05-02 12:22:14|this is the second post|2.jpeg|internal
 a@gmail.com|2022-05-02 12:28:03|another test post, hello|3.jpeg|public
 b@gmail.com|2022-05-02 16:16:13|this is the first post of b@gmail.com|4.jpg|public
