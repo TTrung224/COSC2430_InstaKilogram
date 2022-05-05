@@ -2,7 +2,7 @@
     session_start(); 
     if(!isset($_SESSION["logedIn"])){
         header("Location: login.php");
-      }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -44,10 +44,34 @@
             fclose($file);
             
             $arr = array_reverse($arr);
+
+            if(isset($_GET['search']) && $_GET['search']!=""){
+                $search_str = $_GET['search'];
+                $pattern = "/$search_str/i";
+                $search_arr;
+
+                foreach($arr as $index => $item){
+                    if (preg_match($pattern, $item[0]) || preg_match($pattern, $item[1])){
+                        $search_arr[] = $item;
+                    }
+                }
+                $arr = $search_arr;
+            }
             ?>
 
             <table class="list-table">
-                <caption>Accounts</caption>
+                <caption>
+                    <div><p>Accounts</p></div>
+                    <div>
+                        <form class="search-form" action="account_list.php" method="get">
+                            <input type="text" name="search" id="search" placeholder="search for username or email"
+                                <?php if(isset($_GET['search'])){?> value="<?=$_GET['search']?>" <?php }?>
+                            >
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </caption>
+                    
                 <theader>
                     <tr>
                         <th> Email </th>
@@ -57,11 +81,11 @@
                     </tr>
                 </theader>
 
-            <!-- table body -->
-            <?php 
-            require_once('paging.php');
-            display_table_body($arr);
-            ?>
+                <!-- table body -->
+                <?php 
+                require_once('paging.php');
+                display_table_body($arr);
+                ?>
 
             </table>
 

@@ -468,9 +468,26 @@ footer .other a{
     margin: auto;
 }
 
+
 .admin-page-main .list-table caption{
     padding: 20px 0px 10px 0px;
     font-size: 30px;
+}
+
+.admin-page-main .list-table caption .search-form button{
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    border-style: solid;
+}
+
+.admin-page-main .list-table caption .search-form input{
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: rgb(193, 193, 193);
+    min-width: 230px;
 }
 
 .admin-page-main .list-table th, td {
@@ -494,6 +511,10 @@ footer .other a{
     display: inline-flex;
     align-items: center;
     margin: auto;
+}
+
+.admin-page-main .page-input .search{
+    display: none;
 }
 
 .page-number-form .number-of-pages{

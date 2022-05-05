@@ -41,6 +41,9 @@ function display_page_selection(){ ?>
         <input type="text" name="page" id="page" value="<?=$GLOBALS['current_page']?>">
         <p> / </p>
         <p class="number-of-pages"><?=$GLOBALS['number_of_pages']?></p>
+        <?php if(isset($_GET['search']) && $_GET['search']!=""){?> 
+            <input type="text" name="search" value="<?=$_GET['search']?>" class="search"> 
+        <?php } ?>
     </div>
     <button type="submit">search</button>
 
