@@ -513,6 +513,10 @@ footer .other a{
     display: none;
 }
 
+.admin-page-main .list-table button{
+    margin-left: 3px;
+}
+
 .admin-page-main .list-table .post-img{
     width: 400px;
 }
@@ -535,6 +539,12 @@ footer .other a{
 
 .page-number-form{
     margin: 20px auto;
+}
+
+.page-number-form .page-reach-btn{
+    font-size: 16px;
+    padding: 4px;
+    background-color: rgb(192, 192, 192);
 
 }
 
@@ -565,6 +575,56 @@ footer .other a{
     width:60px;
 }
 
+/* cookie consent modal */
+
+.cookie-consent-modal{
+    display: none;
+    position: fixed; 
+    padding-top: 200px;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
+.cookie-consent-modal .modal-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.cookie-consent-modal .modal-body{
+    padding: 10px 10px 10px 0px;
+    font-size: 18px;  
+}
+
+.cookie-consent-modal .modal-footer{
+    align-self: flex-end;
+    padding: 10px 16px;
+}
+
+.cookie-consent-modal .modal-footer button{
+    padding: 16px 26px;
+    font-size: 18px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 8px;
+    background-color: rgb(153, 205, 50);
+
+}
+
+    
 
 
 

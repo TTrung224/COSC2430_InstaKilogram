@@ -11,8 +11,23 @@
     <title>InstaKilogram</title>
 </head>
 <body>
+    <div class="cookie-consent-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>I use cookies</h2>
+            </div>
+            <div class="modal-body">
+                <p>
+                    My website uses cookies necessary for its basic functioning. By continuing browsing, you consent to my use of cookies and other technologies.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="undetand-consent">I understand</button>
+            </div>
+        </div>
+    </div>
+
     <!--header-->
-    <?php require_once('templates/header.php'); ?>
+    <?php require_once('templates/header.php'); ?>  
 
     <!--main-->
     <main class="home-page-main">
@@ -30,5 +45,7 @@
 
     <!--footer-->
     <?php require_once('templates/footer.php'); ?>
+
+    <script src="cookie_consent.js"></script>
 </body>
 </html>

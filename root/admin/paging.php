@@ -45,28 +45,28 @@ function display_table_accounts_header(){ ?>
                 <form action="account_list.php" method="get">
                     <?php if(isset($_GET['search']) && $_GET['search']!=""){echo "<input type='text' name='search' value='$search' class='none_display'>";}
                     if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
-                    <button type="submit" value="sort_email" name="sort"><i class="fa fa-search"></i></button> </form>
+                    <button type="submit" value="sort_email" name="sort"><i class="fa fa-caret-down" aria-hidden="true"></i></button> </form>
             </div></th>
             <th><div>
                 <p>User Name</p>
                 <form action="account_list.php" method="get">
                     <?php if(isset($_GET['search']) && $_GET['search']!=""){echo "<input type='text' name='search' value='$search' class='none_display'>";}
                     if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
-                    <button type="submit" value="sort_uname" name="sort"><i class="fa fa-search"></i></button> </form>
+                    <button type="submit" value="sort_uname" name="sort"><i class="fa fa-caret-down" aria-hidden="true"></i></button> </form>
             </div></th>
             <th><div>
                 <p>Real Name</p>
                 <form action="account_list.php" method="get">
                     <?php if(isset($_GET['search']) && $_GET['search']!=""){echo "<input type='text' name='search' value='$search' class='none_display'>";}
                     if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
-                    <button type="submit" value="sort_rname" name="sort"><i class="fa fa-search"></i></button> </form>
+                    <button type="submit" value="sort_rname" name="sort"><i class="fa fa-caret-down" aria-hidden="true"></i></button> </form>
             </div></th>
             <th><div>
                 <p>Date Created</p>
                 <form action="account_list.php" method="get">
                     <?php if(isset($_GET['search']) && $_GET['search']!=""){echo "<input type='text' name='search' value='$search' class='none_display'>";}
                     if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
-                    <button type="submit" value="sort_date" name="sort"><i class="fa fa-search"></i></button> </form>
+                    <button type="submit" value="sort_date" name="sort"><i class="fa fa-caret-down" aria-hidden="true"></i></button> </form>
             </div></th>
         </tr>
     </theader>
@@ -80,13 +80,13 @@ function display_table_images_header(){ ?>
                 <p>Email</p>
                 <form action="image_list.php" method="get">
                     <?php if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
-                    <button type="submit" value="sort_email" name="sort"><i class="fa fa-search"></i></button> </form>
+                    <button type="submit" value="sort_email" name="sort"><i class="fa fa-caret-down" aria-hidden="true"></i></button> </form>
             </div></th>
             <th><div>
                 <p>Date Created</p>
                 <form action="image_list.php" method="get">
                     <?php if(isset($_GET['page'])){ echo "<input type='text' name='page' value='$page' class='none_display'>";} ?>
-                    <button type="submit" value="sort_date" name="sort"><i class="fa fa-search"></i></button> </form>
+                    <button type="submit" value="sort_date" name="sort"><i class="fa fa-caret-down" aria-hidden="true"></i></button> </form>
             </div></th>
             <th> Image </th>
             <th> Sharing Level </th>
@@ -108,6 +108,6 @@ function display_page_selection(){ ?>
             <input type="text" name="sort" value="<?=$_GET['sort']?>" class="none_display"> <?php } 
         ?>
     </div>
-    <button type="submit">search</button>
+    <button class="page-reach-btn" type="submit"><i class="fa fa-file-text-o" aria-hidden="true"></i></button>
 
 <?php }
