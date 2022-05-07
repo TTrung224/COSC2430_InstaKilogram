@@ -6,7 +6,7 @@ $current_file_name = basename($_SERVER['PHP_SELF']);
 
 function display_table_body($arr){
     $number_of_row = count($arr);
-    $number_of_column = count($arr[0]);
+    if(sizeof($arr) > 0){$number_of_column = count($arr[0]);}
 
     $page_size = 10;
     $GLOBALS['number_of_pages'] = ceil($number_of_row/$page_size);
@@ -98,9 +98,10 @@ function display_table_images_header(){ ?>
 function display_page_selection(){ ?>
 
     <div class="page-input">
-        <input type="text" name="page" id="page" value="<?=$GLOBALS['current_page']?>">
+        <input type="text" name="page" id="page" 
+        value="<?= $GLOBALS['number_of_pages'] == 0 ? 0 : $GLOBALS['current_page'];?>">
         <p> / </p>
-        <p class="number-of-pages"><?=$GLOBALS['number_of_pages']?></p>
+        <p class="number-of-pages"> <?= $GLOBALS['number_of_pages']?> </p> 
         <?php 
         if(isset($_GET['search']) && $_GET['search']!=""){?> 
             <input type="text" name="search" value="<?=$_GET['search']?>" class="none_display"> <?php } 

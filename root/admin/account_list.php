@@ -64,7 +64,7 @@
             if(isset($_GET['search']) && $_GET['search']!=""){
                 $search_str = $_GET['search'];
                 $pattern = "/$search_str/i";
-                $search_arr;
+                $search_arr = [];
 
                 foreach($arr as $index => $item){
                     if (preg_match($pattern, $item[0]) || preg_match($pattern, $item[1])){

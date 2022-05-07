@@ -21,7 +21,7 @@
                 <?php } ?>
                 <input class="login-page-input email" name="email" type="email" placeholder="Email">
                 <input class="login-page-input pwd" name="password" type="password" placeholder="Password">
-                <button class="login-page-submit-btn" type="submit">Login</button>
+                <button class="login-page-submit-btn" type="submit" disabled="true">Login</button>
             </form>
             <p class="sign-up-text">Don't have account?<a href=""> Sign up</a></p>
         </div>
