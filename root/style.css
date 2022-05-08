@@ -219,16 +219,21 @@ footer .other a{
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem 1rem;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 10px;
+    margin: 1rem;
+}
+
+.gallery-item::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
 }
 
 .gallery-item {
     position:relative;
-    flex: 1 1 0;
     margin: 1rem;
-    min-width: 25%;
 }
 
 .gallery-item-info {
@@ -236,10 +241,11 @@ footer .other a{
 }
 
 .gallery-image {
+    position:absolute;
+    top:0; left:0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
+    object-fit: contain;
 }
 
 .visually-hidden {

@@ -46,52 +46,12 @@
     </header>
     <main>
       <div class="container">
-        <div class="gallery">
-          <div class="gallery-item" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
-            <div class="gallery-item-info">
-              <ul>
-                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
-                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
-              </ul>
-            </div>
-          </div>
-          <div class="gallery-item" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop" class="gallery-image" alt="">
-            <div class="gallery-item-info">
-              <ul>
-                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
-                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
-              </ul>
-            </div>
-          </div>
-          <div class="gallery-item" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=500&fit=crop" class="gallery-image" alt="">
-            <div class="gallery-item-type">
-              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
-            </div>
-            <div class="gallery-item-info">
-              <ul>
-                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 42</li>
-                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
-              </ul>
-            </div>
-          </div>
-          <div class="gallery-item" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1502630859934-b3b41d18206c?w=500&h=500&fit=crop" class="gallery-image" alt="">
-            <div class="gallery-item-type">
-              <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
-            </div>
-            <div class="gallery-item-info">
-              <ul>
-                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 38</li>
-                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <?php
+          require_once("templates/gallery.php");
+        ?>
         <!-- End of gallery -->
         <div class="loader"></div>
+        
       </div>
       <!-- End of container -->
     </main>
