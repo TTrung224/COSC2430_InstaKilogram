@@ -38,9 +38,6 @@
                 require_once("templates/guest_feed.php");
             } 
         ?>
-        
-        <a href="functions/logout.php">Logout</a>
-        
     </main>
 
     <!--footer-->
