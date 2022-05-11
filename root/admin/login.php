@@ -1,5 +1,9 @@
 <?php
     session_start();
+
+    if(isset($_SESSION["adminLogedIn"])){
+        header("Location: admin.php");
+    }
 ?>
 
 <?php
@@ -16,8 +20,7 @@
         $password = formatInput($_POST['password']);
         
         if(strcmp($email,'admin@gmail.com')==0 && password_verify($password,'$2y$10$dkHdOVZeEYBnaib89Jrpveo/3wtllhA725mZ2SIwnm.pYKwjZAGxy')){
-            $_SESSION["logedIn"] = true;
-            $_SESSION["username"] = 'admin';
+            $_SESSION["adminLogedIn"] = true;
             header("Location: admin.php");
         } else {
             header("Location: login.php?error=not validated email or password");

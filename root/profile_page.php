@@ -25,16 +25,16 @@
         <div class="profile-page-user-info">
           <div class="profile-page-user-settings">
             <h1 class="profile-page-user-name"><?=$_SESSION["userInfo"]["username"];?></h1>
-            <div class="profile-page-edit-profile"><a href="edit_profile_page.php">Edit profile</a></div>
-            <a href="/functions/logout.php">Logout</a>
+            <div class="profile-page-button"><a href="edit_profile_page.php">Edit profile</a></div>
+             <div class="profile-page-button"><a href="/functions/logout.php">Logout</a></div>
           </div>
-          <div class="profile-page-stats">
+          <!-- <div class="profile-page-stats">
             <ul>
               <li><span class="profile-page-stat-count">4</span> posts</li>
               <li><span class="profile-page-stat-count">204</span> followers</li>
               <li><span class="profile-page-stat-count">158</span> following</li>
             </ul>
-          </div>
+          </div> -->
           <div class="profile-page-bio">
             <p class="profile-page-real-name"><?=$_SESSION["userInfo"]["realname"]; ?></p>
             <p><?=$_SESSION["userInfo"]["bio"]; ?></p>
@@ -44,6 +44,7 @@
       
       <!-- End of profile section -->
     </header>
+    <hr/>
     <main>
       <div class="container">
         <?php

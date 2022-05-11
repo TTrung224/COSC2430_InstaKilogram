@@ -1,6 +1,6 @@
 <?php 
     session_start(); 
-    if(!isset($_SESSION["logedIn"])){
+    if(!isset($_SESSION["adminLogedIn"])){
         header("Location: login.php");
     }
 
@@ -30,14 +30,16 @@
         <?php require_once('admin_header.html') ?>
 
         <main class="home-page-main admin-page-main">
-            <div><a href="account_list.php">
-                <p>account list</p>
-                <!-- icon -->
-            </a></div>
-            <div><a href="image_list.php">
-                <p>image list</p>
-                <!-- icon -->
-            </a></div>
+            <div class = dashboard>
+                <div class="dashboard-item" id="account-list"><a href="account_list.php">
+                    <div class="header"><i class="fa fa-user" aria-hidden="true"></i></div>
+                    <div class="body"><p>account list</p></div>
+                </a></div>
+                <div class="dashboard-item" id="image-list"><a href="image_list.php">
+                    <div class="header"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+                    <div class="body"><p>image list</p></div>
+                </a></div>
+            </div>
 
             <a href="admin.php?logout=1">logout</a>
 
