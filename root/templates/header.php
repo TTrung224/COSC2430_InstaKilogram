@@ -4,8 +4,7 @@
             <form action="">
                 <input class="search-bar" type="text" placeholder="Search">
                 <button class="search-icon" type="submit"><i class="fa fa-search"></i></button>
-            </form>
-            
+            </form>   
         </div>
         <div class="header-login">
         
