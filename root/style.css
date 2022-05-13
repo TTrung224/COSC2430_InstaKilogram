@@ -216,7 +216,7 @@ footer .other a{
 
 .gallery {
     display: grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     grid-gap: 10px;
     margin: 1rem;
 }
@@ -658,24 +658,34 @@ footer .other a{
 
 }
 
-@media only screen and (min-width: 1024px){
+@media (max-width: 1023px) {
     .gallery {
-        display: grid;
-        grid-template-columns:repeat(4,1fr);
-        grid-gap: 10px;
-        margin: 1rem;
+        grid-template-columns:repeat(3,1fr);
     }
-}
+  }
 
-@media only screen and (max-width: 767px){
+@media (max-width: 767px) {
     .gallery {
-        display: grid;
         grid-template-columns:repeat(2,1fr);
-        grid-gap: 10px;
-        margin: 1rem;
     }
 
-    .post .post-image img {
-        max-width: 100%;
+    #top-nav-bar .header-search-bar{
+        display: none;
+    }    
+    
+    footer{
+        flex-direction: column;
     }
-}
+
+    .post{
+        width: 100%;
+    }
+
+    .post .post-image{
+        width: 100%;
+    }
+
+    .post .post-image img{
+        width: 100%;
+    }
+  }
