@@ -26,19 +26,9 @@ function get_post_user_info($email){
 
 <?php
 foreach($post_arr as $post){ 
-    ?>
+  ?>
     <div class="gallery-item" tabindex="0">
         <img src="Assets/post_images/<?=$post[3]?>" class="gallery-image" alt="">
-        <div class="gallery-item-type">
-          <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
-        </div>
-        <div class="gallery-item-info">
-          <ul>
-            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 42</li>
-            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
-           </ul>
-        </div>
-      </div>
-<?php }?>
-
+    </div>
+  <?php }?>
 </div>
