@@ -655,7 +655,75 @@ footer .other a{
     border-style: none;
     border-radius: 8px;
     background-color: rgb(153, 205, 50);
+}
 
+/* about */
+.home-page-main .group{
+    font-size: 20px;
+    padding: 10px 0 0 10px;
+}
+.about div{
+    padding: 100px 0;
+}
+
+.about .slogan{
+    text-align: center;
+    font-size: 40px;
+}
+
+.about .right {
+    text-align: end;
+    font-size: 36px;
+    padding-right: 10px;
+}
+
+.about .left {
+    font-size: 36px;
+    padding-left: 10px;
+}
+
+/* privacy */
+.privacy{
+    padding: 10px 200px;
+}
+
+.privacy ul{
+    list-style-type: circle;
+}
+
+.privacy p{
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.privacy li{
+    padding: 10px 0 0 20px;
+    font-size: 18px;
+}
+
+.pirvacy h1, h2, h3{
+    padding-top: 20px;
+}
+
+/* Help */
+.help{
+    padding: 10px 10px;
+}
+
+.help li{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.help-form{
+    font-size: 20px;
+    padding: 20px 4px;
+}
+
+.help .help-form #help-input{
+    padding: 10px 60px 10px 4px;
+    border-radius: 8px;
+    font-size: 20px;
 }
 
 @media (max-width: 1023px) {
