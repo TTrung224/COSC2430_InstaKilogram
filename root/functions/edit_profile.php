@@ -15,6 +15,11 @@ function uploadImage() {
   $file_name = basename($_FILES["pfp-change"]["name"]);
   $path = "../Assets/pfp/";
   $file = $path . $file_name;
+
+  if ($_SESSION["userInfo"]["pfp-path"] != "/Assets/pfp/default_user.png") {
+    unlink(".." . $_SESSION["userInfo"]["pfp-path"]);
+  }
+    
   move_uploaded_file($_FILES["pfp-change"]["tmp_name"], $file);
   return "/Assets/pfp/" . $file_name;
 }
@@ -30,7 +35,6 @@ if ($username != $_SESSION["userInfo"]["username"] or $realname != $_SESSION["us
   $new_file = fopen($new_file_name, "w") or die("can't open file");
 
   if ($_FILES["pfp-change"]["error"] != 4) {
-    uploadImage();
     $pfp_path = uploadImage();
   }
   
@@ -49,9 +53,7 @@ if ($username != $_SESSION["userInfo"]["username"] or $realname != $_SESSION["us
   }
   fclose($new_file);
   rename($new_file_name, $file_name);
-  echo "change";
 }
-print_r($_FILES);
 header("Location: ../profile_page.php");
 
 ?>

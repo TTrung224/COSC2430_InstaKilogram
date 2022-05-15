@@ -18,7 +18,7 @@
                 <ul>
                     <li>Tran Quoc Trung: s3891724</li>
                     <li>Ho Tran Minh Khoi: s</li>
-                    <li>Nathan Candre: s</li>
+                    <li>Nathan Candre: s3938364</li>
                     <li>Bui Quang Thanh Dat: s</li>
                 </ul>
             </div>
