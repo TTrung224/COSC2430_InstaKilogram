@@ -6,3 +6,7 @@ Group 4:
     Bui Quang Thanh Dat s3927551
 
 images used in project reference: Pexels n.d, The best free stock photos royalty free images & videos shared by creators, Pexels, viewed 16 May 2022, <https://www.pexels.com>.
+
+admin page url: /admin/admin.php
+admin email: admin@gmail.com
+admin password: 123456
