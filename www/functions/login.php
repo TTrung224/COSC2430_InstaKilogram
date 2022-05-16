@@ -23,7 +23,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
                 $flag++;
                 if($flag == 1){continue;}
                 $data = explode("|", $line);  
-                if($data[0] == $email && $data[1] == $password){
+                if($data[0] == $email && password_verify($password, $data[1])){
                     $validated = true;
                     break;
                 }

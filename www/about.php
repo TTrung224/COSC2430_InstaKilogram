@@ -17,9 +17,9 @@
                 <p>Group 4:</p>
                 <ul>
                     <li>Tran Quoc Trung: s3891724</li>
-                    <li>Ho Tran Minh Khoi: s</li>
+                    <li>Ho Tran Minh Khoi: s3877653</li>
                     <li>Nathan Candre: s3938364</li>
-                    <li>Bui Quang Thanh Dat: s</li>
+                    <li>Bui Quang Thanh Dat: s3927551</li>
                 </ul>
             </div>
 

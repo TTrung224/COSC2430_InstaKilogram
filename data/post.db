@@ -1,10 +1,7 @@
 user_email|date_created|description|image_name|level
-a@gmail.com|2022-05-02 12:22:14|this is the second post|2.jpeg|internal
-a@gmail.com|2022-05-02 12:28:03|another test post, hello|3.jpeg|public
-b@gmail.com|2022-05-02 16:16:13|this is the first post of b@gmail.com|4.jpg|public
-b@gmail.com|2022-05-02 16:18:37|first private post of b@gmail.com|5.jpg|private
-a@gmail.com|2022-05-02 17:12:26|a private post|6.jpg|private
-b@gmail.com|2022-05-02 23:41:44|a test internal post from user_b|7.jpg|internal
-a@gmail.com|2022-05-02 23:43:42||8.jpeg|public
-b@gmail.com|2022-05-05 12:10:33|an internal post of b_user|9.jpg|internal
-b@gmail.com|2022-05-05 12:11:07||10.jpg|internal
+s3891724@rmit.edu.vn|2022-05-16 11:27:07|A public post of Trung|1.jpg|public
+s3891724@rmit.edu.vn|2022-05-16 11:27:40|An internal post of Trung|2.jpg|internal
+s3891724@rmit.edu.vn|2022-05-16 11:28:42|A private post of Trung|3.jpg|private
+s3877653@rmit.edu.vn|2022-05-16 11:31:48|A public post of Khoi|4.jpg|public
+s3877653@rmit.edu.vn|2022-05-16 11:32:44|An internal post of Khoi|5.jpg|internal
+s3877653@rmit.edu.vn|2022-05-16 11:32:58|A private post of Khoi|6.jpg|private

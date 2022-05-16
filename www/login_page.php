@@ -27,7 +27,7 @@
                 <input class="login-page-input pwd" name="password" type="password" placeholder="Password">
                 <button class="login-page-submit-btn" type="submit" disabled="true">Login</button>
             </form>
-            <p class="sign-up-text">Don't have account?<a href=""> Sign up</a></p>
+            <p class="sign-up-text">Don't have account?<a href="sign_up_page.php"> Sign up</a></p>
         </div>
     </main>
     <script src = "login_page_script.js"></script>

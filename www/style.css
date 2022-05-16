@@ -100,6 +100,12 @@
     text-align: center;
     padding: 20px 80px;
 }
+
+.login-page-cover .login-box .pfp-input-label{
+    text-align: start;
+    margin-top: 5px;
+}
+
 .login-page-cover .login-box-logo img{
     width: 250px;
     padding: 10px 0px;
@@ -125,6 +131,10 @@
     border-radius: 8px;
 }
 
+.login-page-cover .login-page-clear-btn{
+    margin-bottom: 0;
+}
+
 .login-page-cover .login-page-submit-btn:hover{
     background-color: rgb(44, 153, 241);
 }
@@ -140,7 +150,7 @@
 }
 
 .login-page-cover .error{
-    color: rgba(var(--i30,237,73,86),1);
+    color: rgba(237,73,86,1);
     background-color: white;
     border: none;
 }
