@@ -1,16 +1,15 @@
 <?php 
     session_start(); 
-    if(!isset($_SESSION["adminLogedIn"])){
-        header("Location: login.php");
-    }
 
     if(isset($_GET['logout'])){
-        session_start();
-
         session_unset();
         session_destroy();
 
         header("location: admin.php");
+    }
+
+    if(!isset($_SESSION["adminLogedIn"])){
+        header("Location: login.php");
     }
 ?>
 

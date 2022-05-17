@@ -4,9 +4,7 @@
     if(isset($_SESSION["adminLogedIn"])){
         header("Location: admin.php");
     }
-?>
 
-<?php
     if(isset($_POST['email']) && isset($_POST['password'])){
         function formatInput($data){
             $data = trim($data);
@@ -26,8 +24,6 @@
             header("Location: login.php?error=not validated email or password");
         }
     }
-    
-    
 ?>
 
 <!DOCTYPE html>
