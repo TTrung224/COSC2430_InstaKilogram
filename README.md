@@ -4,6 +4,7 @@ Group 4:
     Ho Tran Minh Khoi s3877653
     Nathan Candre s3938364
     Bui Quang Thanh Dat s3927551
+GitHub URL: https://github.com/TTrung224/COSC2430_A2.git
 
 images used in project reference: Pexels n.d, The best free stock photos royalty free images & videos shared by creators, Pexels, viewed 16 May 2022, <https://www.pexels.com>.
 
