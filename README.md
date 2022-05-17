@@ -5,7 +5,7 @@ Group 4:
     Nathan Candre s3938364
     Bui Quang Thanh Dat s3927551
 GitHub URL: https://github.com/TTrung224/COSC2430_A2.git
-Demonstration vidoe: 
+Demonstration vidoe: https://youtu.be/aqjSo2ZSzZg
 
 How to start the website:
 1. Using terminal to start the PHP Built-in Web Server in the "www" folder
